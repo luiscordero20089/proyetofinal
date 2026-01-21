@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía Completa de Fórmulas y Funciones en Microsoft Excel">
+    <meta name="author" content="Unidad Educativa Dolores Sucre">
+    
+    <title>Excel: Fórmulas y Funciones Avanzadas</title>
+
+    <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+    
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top headroom">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/img6.JPG" alt="Logo Excel" style="display: inline-block; height: 30px; margin-right: 10px;"> <strong> Microsoft Excel</strong>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="index.html"><strong>Inicio</strong></a></li>
+                    <li><a href="Proyecto.html"><strong>Proyecto</strong></a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Excel</strong> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="Excel.html"><strong>¿Qué es y Para qué sirve?</strong></a></li>
+                            <li><a href="#funciones"><b><strong>Funciones de Excel</strong></b></a></li>
+                            <li><a href="juegosExcel.html"><b><strong>Guías y Juegos Interactivos</strong></b></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>PowerPoint</strong> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Powerpoint.html"><strong>¿Qué es y Para qué sirve?</strong></a></li>
+                            <li><a href="Powerpoint.html#juegos"><strong>Guías y Juegos Interactivos</strong></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Finalizacion.html"><strong>Finalizacion</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header id="head" class="secondary"></header>
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="index.html"><strong>Inicio</strong></a></li>
+            <li class="active"><strong>Excel</strong></li>
+        </ol>
+
+        <div class="row" id="introduccion">
+            <aside class="col-md-4 sidebar sidebar-left">
+                <div class="row widget">
+                    <div class="col-xs-12">
+                        <h4><strong>Historia de Microsoft Excel</strong></h4>
+                        <p><strong>2020 - Fórmulas Dinámicas:</strong> Se lanzaron funciones revolucionarias como FILTRAR y ORDENAR, que permiten que una sola fórmula llene varias celdas automáticamente.</p>
+
+<p><strong>Colaboración en Tiempo Real:</strong> Con la llegada de la educación virtual, Excel se perfeccionó para que varias estudiantes del Dolores Sucre puedan editar el mismo archivo al mismo tiempo desde la nube.</p>
+
+<p><strong>2023/2024 - Inteligencia Artificial:</strong> Microsoft integró Copilot, una IA que ayuda a crear fórmulas complejas y analizar datos solo escribiendo lo que necesitas en lenguaje natural.</p>
+
+<p><strong>Python en Excel:</strong> Recientemente se permitió usar el lenguaje de programación Python directamente en las celdas, llevando el análisis de datos a un nivel profesional.</p>
+                    </div>
+                </div>
+                <div class="row widget">
+                    <div class="col-xs-12">
+                        <h4><strong>Conceptos Base</strong></h4>
+                        <p>Excel usa filas y columnas para organizar tareas, ayudando a las estudiantes a desarrollar un orden lógico en sus proyectos.</p>
+                    </div>
+                </div>
+                <div class="row widget">
+                    <div class="col-xs-12">
+                        <h4><strong>Estructura de la Hoja</strong></h4>
+                        <p>La celda es la unidad básica donde las estudiantes ingresan datos y fórmulas para automatizar sus cálculos académicos.</p>
+                    </div>
+                </div>
+                <div class="row widget">
+                    <div class="col-xs-12">
+                        <h4><strong>Visualización y Gráficos</strong></h4>
+                        <p>Convierte listas de datos en gráficos claros, facilitando la comprensión y exposición de resultados en investigaciones escolares.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <article class="col-md-8 maincontent">
+                <header class="page-header">
+                    <h1 class="page-title"><strong>Dominando Microsoft Excel en el Ámbito Educativo</strong></h1>
+                </header>
+<h2><strong>¿Qué es Microsoft Excel?</strong></h2>
+<p><strong>Microsoft Excel</strong> es una aplicación de hojas de cálculo desarrollada por Microsoft que forma parte de la suite ofimática <strong>Microsoft 365</strong>.<br>
+
+Su función principal es ayudar a los usuarios a organizar, analizar y manipular datos numéricos y de texto. Para lograr esto de manera interactiva y profesional, utiliza herramientas clave como las que estás incluyendo en tu proyecto:<br>
+
+<p><strong>Cinta de opciones:</strong> Contiene pestañas como Inicio (para dar formato) y Fórmulas (para cálculos avanzados).</p>
+
+<p><strong>Fórmulas y Funciones:</strong> Permite realizar desde sumas básicas hasta cálculos complejos usando la Biblioteca de funciones.</p>
+
+<p><strong>Gestión de datos:</strong> Facilita el ordenamiento de información y la creación de Nombres definidos para que las celdas sean más fáciles de identificar.</p>
+
+<p><strong>Auditoría:</strong> Incluye herramientas para rastrear el origen de los datos y detectar errores visualmente.</p>
+                <h2><strong>¿Cuál es la función principal de Microsoft Excel  en el contexto educativo?</strong></h2>
+ <P>En el contexto educativo, la función principal de<strong>  Microsoft Excel</strong>  es la organización y el análisis de datos mediante cálculos automáticos.</P>
+
+<p><strong> Específicamente, en el aula se utiliza para:</strong> </p>
+
+
+<p><strong> Gestión académica:</strong>  Registrar calificaciones y realizar promedios automáticos de los estudiantes.</p>
+
+
+
+<p><strong> Administración escolar:</strong>  Crear presupuestos para actividades o proyectos escolares.</p>
+
+
+<p>
+<strong> Investigación:</strong>  Analizar datos estadísticos necesarios en proyectos de clase.</p>
+
+
+
+<p><strong>Procesamiento de información:</strong> Manejar desde listas de asistencia sencillas hasta balances financieros complejos mediante fórmulas.</p>
+
+                <h2><strong>¿Para qué sirve en el aula?</strong></h2>
+                <p>Sirve para registrar calificaciones, realizar promedios automáticos, crear presupuestos escolares y analizar datos estadísticos en proyectos de investigación.</p>
+
+                <div>
+                    <img src="assets/images/img3.PNG" style="height:250px; margin-top:20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                </div>
+            </article>
+        </div>
+
+        <hr>
+
+        <div class="row" id="funciones">
+            <aside class="col-md-4 sidebar sidebar-left">
+                <div class="row widget">
+                    <div class="col-xs-12">
+                        <h4><strong>El Operador de Inicio</strong></h4>
+                        <p>Es la "llave" que activa Excel. Sin el signo <strong>=,</strong>Excel trata tus números como simple texto y no realizará ningún cálculo. Es el paso obligatorio para toda fórmula.</p>
+                    </div>
+                </div>
+                <div class="row widget">
+                    <div class="col-xs-12">
+                        <h4><strong>Rangos de Celda</strong></h4>
+                        <p>Los dos puntos significan "hasta". Permiten seleccionar un grupo de celdas rápidamente<strong> (ej. A1:A50)</strong>. Es fundamental para procesar grandes listas de notas o datos escolares en un solo paso.</p>
+                    </div>
+                </div>
+                <div class="row widget">
+                    <div class="col-xs-12">
+                        <h4><strong>Errores Comunes</strong></h4>
+                        <p>Excel te avisa si algo falla. El error <strong>#DIV/0!</strong> aparece al dividir por cero, y <strong>#¿NOMBRE?</strong> si escribes mal una función. Aprender a leerlos te ayuda a corregir tus tareas más rápido.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <article class="col-md-8 maincontent">
+                <header class="page-header">
+                    <h1 class="page-title"><strong>Guía de Formulas y Funciones Básicas de Excel</strong></h1>
+                </header>
+                <h2><strong> ¿Qué es una fórmula en Excel? </strong></h2>
+                <p>Una fórmula es una expresión matemática o lógica utilizada para realizar cálculos o manipular datos en una hoja de cálculo. Las fórmulas de Excel comienzan siempre con el símbolo de igual (=) y pueden contener operadores matemáticos, referencias a celdas, funciones predefinidas y constantes.</p>
+                <h2><strong>¿Qué es una función en Excel? </strong></h2>
+                <p> Una función en Excel son algoritmos predefinidos que realizan cálculos y operaciones específicas. Estas funciones te permiten realizar diversas tareas, como realizar cálculos matemáticos, manipular texto, buscar datos, contar valores y mucho más. 
+
+Cada función tiene un nombre, y requieren parámetros definidos o un usuario puede seleccionar el parámetro que necesitas.</p>
+<h2><strong>¿Qué diferencia hay entre fórmula y función?  </strong></h2>
+                <p>Una fórmula es cuando ingresamos una operación matemática específica. Esta es una de las formas escenciales en como usar Excel. Por ejemplo, escribimos en la celda lo siguiente:</p>
+
+<p>=2+2 (apretar Enter) y encontrarás el resultado.</p>
+
+<p>En tanto, una función es cuando le das instrucciones a Excel.</p>
+<h2><strong>¿Cómo usar las funciones en Excel? </strong></h2>
+                <p><strong> Para usar una función en Excel, debes seguir los siguientes pasos:</strong></p>
+
+<p>2.<strong>Selecciona la celda</strong> donde deseas que aparezca el resultado de la función.</p>
+<p>3.<strong>Escribe el signo igual (=) </strong>en la celda para indicar que estás ingresando una fórmula.</p>
+<p>4.Escribe el <strong>nombre de la función que deseas utilizar</strong>, seguido de un paréntesis de apertura “(“.</p>
+<p>5.<strong>Ingresa los parámetros de la función.</strong> Los parámetros son los valores, criterios o rangos de celdas que la función utilizará para realizar el cálculo y los entregará Excel. Puedes ingresar los argumentos directamente, o seleccionar las celdas o rangos de celdas haciendo clic en ellas con el mouse.</p>
+<p>6.<strong>Si la función tiene más de un parámetro</strong>, sepáralos con comas.</p>
+<p>7.<strong>Cierra el paréntesis “)”</strong> para indicar que has terminado de ingresar los argumentos.</p>
+<p>8.Presiona la tecla <strong>Enter </strong>o haz clic fuera de la celda para calcular el resultado y mostrarlo.</p><br>
+
+
+
+<p><strong>Por ejemplo,</strong> para sumar los valores de las celdas A1 y A2, puedes usar la función SUMA de la siguiente manera:<strong>=A1+A2</strong></p>
+<p>Te puede interesar:<strong> Aqui tenemos ejemplo de Formulas y Funciones basicas con los signos de +,-,*,/</strong></p>  <a href="https://view.genially.com/696d2a60d66e8d77d661aed5/interactive-content-genially-sin-titulo" 
+           target="_blank" 
+           class="btn btn-default btn-sm">
+           <i class="fa fa-external-link"></i> Abrir en pantalla completa
+        </a>
+
+                <h3><strong>🟢 OPERACIONES BÁSICAS</strong></h3>
+                <ul>
+                    <li><strong>SUMA:</strong> <code>=A1+A2</code> (Sencilla) | <code>=SUMA(A1:A10)</code> (Compleja)</li>
+                    <li><strong>RESTA:</strong> <code>=A1-A2</code> (Sencilla) | <code>=A1-SUMA(B1:B5)</code> (Compleja)</li>
+                    <li><strong>MULTIPLICACIÓN:</strong> <code>=A1*B1</code> (Sencilla) | <code>=PRODUCTO(A1:A5)</code> (Compleja)</li>
+                    <li><strong>DIVISIÓN:</strong> <code>=A1/B1</code> (Sencilla) | <code>=A1/(B1+B2)</code> (Compleja)</li>
+                </ul>
+                           <img src="assets/images/img18.PNG"style="height:250px; margin-top:20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+
+                <h3><strong>🔵 FUNCIONES DE ANÁLISIS (PROMEDIO Y MÁS)</strong></h3>
+                <p>Estas funciones te permiten analizar listas de datos rápidamente:</p>
+                
+                <h4><strong>1. Función PROMEDIO</strong></h4>
+                <p>Calcula la media aritmética de una lista de notas o valores.</p>
+                <ul>
+                    <li><strong>Uso:</strong> <code>=PROMEDIO(B2:B20)</code></li>
+                    <li><em>Ejemplo: Ideal para sacar tu nota final del quimestre.</em></li>
+                </ul>
+
+                <h4><strong>2. Función CONTAR</strong></h4>
+                <p>Cuenta cuántas celdas contienen números en un rango seleccionado.</p>
+                <ul>
+                    <li><strong>Uso:</strong> <code>=CONTAR(A1:A50)</code></li>
+                    <li><em>Ejemplo: Para saber cuántos estudiantes entregaron una tarea.</em></li>
+                </ul>
+
+                <h4><   strong>3. Funciones MAX y MIN</strong></h4>
+                <p>Encuentran el valor más alto y el más bajo de una lista.</p>
+                <ul>
+                    <li><strong>Máximo:</strong> <code>=MAX(C1:C10)</code> (Encuentra la nota más alta)</li>
+                    <li><strong>Mínimo:</strong> <code>=MIN(C1:C10)</code> (Encuentra la nota más baja)</li>
+                </ul>
+
+                <div>
+                    <img src="assets/images/img4.PNG" style="height:250px; margin-top:20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                </div>
+            </article>
+        </div>
+    </div>
+    <div style="margin-top: 30px; text-align: center;">
+    <a href="FORTALECIMIENTO DIGITAL.html" style="
+        background-color: #0078d4; 
+        color: white; 
+        padding: 15px 30px; 
+        text-decoration: none; 
+        border-radius: 5px; 
+        font-weight: bold;
+        display: inline-block;
+        border: 2px solid #005a9e;
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;">
+        Ir al Fortalecimiento Digital
+    </a>
+</div>
+
+    <footer id="footer" class="top-space">
+        <div class="footer1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 widget">
+                        <h3 class="widget-title">U.E. Dolores Sucre</h3>
+                        <p>Comprometidos con la enseñanza de herramientas tecnológicas de vanguardia para nuestras estudiantes.</p>
+                    </div>
+                    <div class="col-md-6 widget">
+                        <h3 class="widget-title">Enlaces Rápidos</h3>
+                        <p class="follow-me-icons">
+                            <a href="index.html">Inicio</a> | <a href="Proyecto.html">Proyecto</a> | <a href="Excel.html">Excel</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 widget text-center">
+                        <p>Copyright &copy; 2026, Unidad Educativa Dolores Sucre. Guayaquil, Ecuador.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/headroom.min.js"></script>
+    <script src="assets/js/jQuery.headroom.min.js"></script>
+    <script src="assets/js/template.js"></script>
+</body>
+</html>
